@@ -1,0 +1,162 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    background: #97CECF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.title-h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+.title-line {
+    height: 1px;
+    width: 30px;
+    border-bottom: 1.3px solid white;
+}
+
+.date {
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 7px 100px 0 0;
+}
+
+/*.days-of-the-week {*/
+/*    font-size: 30px;*/
+/*    letter-spacing: 2px;*/
+    
+/*}*/
+
+/*.day {*/
+/*    padding: 15px;*/
+/*}*/
+
+.input-search {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+#city {
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+.circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    height: 500px;
+    color: white;
+    background-color: #97CECF;
+    font-size: 18px;
+}
+
+.today {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    margin: auto;
+    z-index: 10;
+}
+
+.today:hover {
+    display: flex;
+    background: #ACACAC;
+    transition: ease-in, 0.5s;
+    width: 500px;
+    height: 500px;
+    z-index: 20;
+}
+
+.tomorrow {
+    position: absolute;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    margin: auto;
+    z-index: 9;
+}
+
+.tomorrow:hover {
+    display: flex;
+    background: #ACACAC;
+    transition: ease-in, 0.5s;
+    width: 500px;
+    height: 500px;
+    z-index: 20;
+}
+
+.the-next-day {
+    position: absolute;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+}
+
+.the-next-day:hover {
+    display: flex;
+    background: #ACACAC;
+    transition: ease-in, 0.5s;
+    width: 500px;
+    height: 500px;
+    z-index: 20;
+}
+
+.temp {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    font-size: 36px;
+    
+}
+
+.high {
+    margin: 10px;
+}
+
+.low {
+    margin: 10px;
+}
+
+#bar {
+    position: fixed;
+    /*left: 50%;*/
+    top: 565px;
+    justify-content: center;
+    height: 200px;
+    width: 1px;
+    border-right: 5px solid white;
+    z-index: 100;
+}
